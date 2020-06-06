@@ -1,0 +1,167 @@
+.horizontal {
+    width: 50vw;
+    height: auto;
+}
+
+.supervertical {
+    height: auto;
+    width: 28vw;
+}
+.vertical {
+    height: auto;
+    width: 35vw;
+}
+
+.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../Art_directions/Pop-art/Marilyn_Diptych_1962.jpg") fixed;
+    width: 100%;
+    height: 30vh;
+}
+
+/* Grid */
+
+.content {
+    justify-content: center;
+    width: 90%;
+    margin: 20px auto 0;
+    text-align: center;
+    grid-auto-rows: minmax(30vh, auto);
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.box1 {
+    background: url("../Art_directions/Pop-art/Costume_party_1972.jpg") bottom;
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.box2 {
+    grid-column: 3/5;
+    grid-row: 1;
+}
+
+.box3 {
+    background: url("../Art_directions/Pop-art/Commuter_passengers_1980.jpg");
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.box4 {
+    background: url("../Art_directions/Pop-art/Big_splash_1967.jpg") center;
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.box5 {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.box6 {
+    background: url("../Art_directions/Pop-art/Pastry_Case_1962.jpg");
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 4;
+}
+
+.box7 {
+    background: url("../Art_directions/Pop-art/Marilyn_Diptych_1962.jpg");
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 3/5;
+}
+
+.box8 {
+    background: url("../Art_directions/Pop-art/Campbells_Soup_Cans_1962.jpg");
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.box9 {
+    background: url("../Art_directions/Pop-art/Mao_1972.jpg") center;
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.box10 {
+    background: url("../Art_directions/Pop-art/Spoonbridge_and_Cherry_1988.jpg");
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.box11 {
+    background: url("../Art_directions/Pop-art/Burger_1962.jpg");
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.box12 {
+    grid-column: 3/5;
+    grid-row: 5;
+}
+
+.box13 {
+    background: url("../Art_directions/Pop-art/Shoes_1962.jpg");
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.box14 {
+    background: url("../Art_directions/Pop-art/Blam_1962.jpg");
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.box15 {
+     background: url("../Art_directions/Pop-art/Wow_1963.jpg");
+     background-size: cover;
+     grid-column: 2;
+     grid-row: 6/8;
+ }
+
+.box16 {
+    background: url("../Art_directions/Pop-art/Just_what_is_it_that_makes_todays_homes_so_different_so_appealing_1956.jpg") center;
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 6;
+}
+
+.box17 {
+    background: url("../Art_directions/Pop-art/Look_Mikky_1961.jpg");
+    background-size: cover;
+    grid-column: 4;
+    grid-row: 6;
+}
+
+.box18 {
+    grid-column: 3/5;
+    grid-row: 7;
+}
+
+.box19 {
+    background: url("../Art_directions/Pop-art/Great_american_nude_1961.jpg");
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 8;
+}
+
+.box20 {
+    background: url("../Art_directions/Pop-art/Standart_station_1966.jpg") center;
+    background-size: cover;
+    grid-column: 3/5;
+    grid-row: 8;
+}

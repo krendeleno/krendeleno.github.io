@@ -1,0 +1,158 @@
+.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../Art_directions/Constructivism/Space-force_structure_1921.jpg") center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+}
+
+/*Modal*/
+.horizontal {
+    width: 50vw;
+    height: auto;
+}
+
+.supervertical {
+    height: auto;
+    width: 25vw;
+}
+.vertical {
+    height: auto;
+    width: 35vw;
+}
+/*Grid*/
+.content {
+    width: 90%;
+    margin: 20px auto 0;
+    text-align: center;
+    grid-auto-rows: minmax(30vh, auto);
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 50% 25% 25%;
+}
+
+.box1 {
+    background: url("../Art_directions/Constructivism/Non-objective_composition_n_88_1919.jpg") center;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.box2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.box3 {
+    background: url("../Art_directions/Constructivism/Composition_1918.jpg") center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.box4 {
+    background: url("../Art_directions/Constructivism/Tatlins_Tower_1925.jpg");
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 1/4;
+}
+
+.box5 {
+    background: url("../Art_directions/Constructivism/The_seller_of_the_cloth_1912.jpg");
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+.box6 {
+    background: url("../Art_directions/Constructivism/Sport_fotoediting_1923.jpg") center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.box7 {
+    grid-column: 2/4;
+    grid-row: 4;
+}
+
+.box8 {
+    background: url("../Art_directions/Constructivism/Painterly_Architectonic_1918.jpg");
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.box9 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.box10 {
+    background: url("../Art_directions/Constructivism/Summer_day_1929.jpg");
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 5/7;
+}
+
+.box11 {
+    background: url("../Art_directions/Constructivism/Sketch_of_an_ad_for_a_cafe_in_Mosselprom_1923.jpg");
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.box12 {
+    background: url("../Art_directions/Constructivism/Project_of_the_Palace_of_labor_1923.jpg");
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 6;
+}
+
+.box13 {
+    background: url("../Art_directions/Constructivism/Space-force_structure_1921.jpg");
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 7/9;
+}
+
+.box14 {
+    grid-column: 2/4;
+    grid-row: 7;
+}
+
+.box15 {
+     background: url("../Art_directions/Constructivism/Sketch_of_the_stage_design_for_the_play_the Magnanimous cuckold_1922.jpg");
+     background-size: cover;
+     grid-column: 2/4;
+     grid-row: 8;
+ }
+
+.box16 {
+    grid-column: 1;
+    grid-row: 9;
+}
+
+.box17 {
+    background: url("../Art_directions/Constructivism/The_Sailor_1911.jpg") center;
+    background-size: cover;
+    grid-column: 1;
+    grid-row: 10;
+}
+
+.box18 {
+    background: url("../Art_directions/Constructivism/Letatlin_1932.jpg") center;
+    background-size: cover;
+    grid-column: 2;
+    grid-row: 9/11;
+}
+
+.box19 {
+    background: url("../Art_directions/Constructivism/Lengiz_1924.jpg") center;
+    background-size: cover;
+    grid-column: 3;
+    grid-row: 9/11;
+}
+

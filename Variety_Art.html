@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="Variety_Art_css.css" rel="stylesheet">
+    <link href="CSS/Variety_Art_css.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Rubik:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Живопись</title>
-    <script src="jquery-3.4.1.min.js" charset="utf-8"></script>
-    <script src="Variety_Art_js.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+    <script src="JS/Page_transitions.js"></script>
+    <script src="JS/Variety_Art_js.js" charset="utf-8"></script>
 </head>
-<body>
+<body class="animsition"
+      data-animsition-in-class="fade-in-left"
+      data-animsition-out-class="zoom-out-sm">
+    <header class="header scroll_menu">
+        <div class="container">
+            <nav class="nav">
+                <a href="Variety_Art.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Живопись</a>
+                <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
+                <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
+            </nav>
+        </div>
+    </header>
     <header class="header">
         <div class="container">
-            <div class=" header_logo"><a href="index.html" class="nav_link">Главная</a></div>
             <nav class="nav">
-                <a href="Variety_Art.html" class="nav_link">Живопись</a>
-                <a href="Variety_Literature.html" class="nav_link">Литература</a>
-                <a href="Variety_Music.html" class="nav_link">Музыка</a>
+                <a href="Variety_Art.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Живопись</a>
+                <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
+                <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
             </nav>
         </div>
     </header>
@@ -28,7 +43,7 @@
                 <div class="main title">Экспрессионизм</div>
                 <div class="button_tags">
                     <div class="tags">драматизм, эмоциональность</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Expressionism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review"> Мировоззренческой основой экспрессионизма стал индивидуалистический протест против
                     уродливого мира, все большее отчуждение человека от мира, чувства бесприютности, крушения, распада
@@ -40,13 +55,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Munch.jpg">
+                            <img src="Art_directions/Expressionism/Munch.jpg">
                         </div>
                         <div class="art_text">Э. Мунк</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Kirchner.jpeg">
+                            <img src="Art_directions/Expressionism/Kirchner.jpeg">
                         </div>
                         <div class="art_text">Э. Кирхнер</div>
                     </div>
@@ -77,7 +92,6 @@
                                 <div class="art art04"></div>
                                 <div class="border2"></div>
                             </div>
-
                         </div>
                     </div>
                     <svg class="n1 next" width="30" height="60" viewBox="0 0 30 60">
@@ -91,7 +105,7 @@
                 <div class="main title">Абстракционизм</div>
                 <div class="button_tags">
                     <div class="tags">геометрия, беспредметность</div>
-                    <a href="Abstractionism.html" class="button">подробнее</a>
+                    <a href="Abstractionism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">Направление в искусстве, использующее в качестве принципа отказ от
                     изображения реальных предметов в живописи, скульптуре и графике, освобождение слова
@@ -102,13 +116,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Suprematism/Malevich.jpg">
+                            <img src="Art_directions/Suprematism/Malevich.jpg">
                         </div>
                         <div class="art_text">К. Малевич</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Suprematism/Kandinsky.jpeg">
+                            <img src="Art_directions/Suprematism/Kandinsky.jpeg">
                         </div>
                         <div class="art_text">В. Кандинский</div>
                     </div>
@@ -122,10 +136,6 @@
                     </svg>
                     <div class="limiter">
                         <div class="content_art" id="content_art2">
-                            <div class="container_art_small" id="last_2">
-                                <div class="art art04"></div>
-                                <div class="border2"></div>
-                            </div>
                             <div class="container_art_small">
                                 <div class="art art11"></div>
                                 <div class="border2"></div>
@@ -142,11 +152,6 @@
                                 <div class="art art14"></div>
                                 <div class="border2"></div>
                             </div>
-                            <div class="container_art_small" id="first_2">
-                                <div class="art art11"></div>
-                                <div class="border2"></div>
-                            </div>
-
                         </div>
                     </div>
                     <svg class="n2 next" width="30" height="60" viewBox="0 0 30 60">
@@ -160,7 +165,7 @@
                 <div class="main title">Кубизм</div>
                 <div class="button_tags">
                     <div class="tags">стереометрические примитивы</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Cubism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review"> В основе кубизма лежит стремление художника разложить изображаемый трёхмерный
                     объект на простые элементы и собрать его на холсте в двумерном изображении. Таким образом,
@@ -172,13 +177,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Picasso.jpg">
+                            <img src="Art_directions/Cubism/Picasso.jpg">
                         </div>
                         <div class="art_text">П. Пикассо</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Braque.jpg">
+                            <img src="Art_directions/Cubism/Braque.jpg">
                         </div>
                         <div class="art_text">Ж. Брак</div>
                     </div>
@@ -186,16 +191,31 @@
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art21"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p3 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art3">
+                            <div class="container_art_small">
+                                <div class="art art21"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art22"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art23"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art24"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container_art_small">
-                        <div class="art art22"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n3 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -206,7 +226,7 @@
                 <div class="main title">Лучизм</div>
                 <div class="button_tags">
                     <div class="tags">цветовые лучи</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Rayonism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">Смыслом живописи основатель лучизма Михаил Ларионов объявил не изображение предметов,
                     а иллюстрирование отражённых от них цветовых лучей, что, по мнению автора, в большей мере близко к
@@ -219,13 +239,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Larionov.jpg">
+                            <img src="Art_directions/Rayonism/Larionov.jpg">
                         </div>
                         <div class="art_text">М. Ларионов</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Goncharova.jpg">
+                            <img src="Art_directions/Rayonism/Goncharova.jpg">
                         </div>
                         <div class="art_text">Н. Гончарова</div>
                     </div>
@@ -233,16 +253,31 @@
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art31"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p4 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art4">
+                            <div class="container_art_small">
+                                <div class="art art31"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art32"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art33"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art34"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container_art_small">
-                        <div class="art art32"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n4 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -253,7 +288,7 @@
                 <div class="main title">Футуризм</div>
                 <div class="button_tags">
                     <div class="tags">движение, энергия</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Futurism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">Футуризм отталкивался от фовизма, заимствуя у него цветовые находки и исходную идею,
                     от кубизма, у которого перенял художественные формы, однако отвергал кубический анализ (разложение)
@@ -265,13 +300,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Boccioni.jpg">
+                            <img src="Art_directions/Futurism/Boccioni.jpg">
                         </div>
                         <div class="art_text">У. Боччони</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Balla.jpg">
+                            <img src="Art_directions/Futurism/Balla.jpg">
                         </div>
                         <div class="art_text">Д. Балла</div>
                     </div>
@@ -279,16 +314,31 @@
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art41"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p5 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art5">
+                            <div class="container_art_small">
+                                <div class="art art41"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art42"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art43"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art44"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container_art_small">
-                        <div class="art art42"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n5 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -299,7 +349,7 @@
                 <div class="main title">Примитивизм</div>
                 <div class="button_tags">
                     <div class="tags">простота форм</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Primitivism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">Включает в себя обдуманное упрощение картины, которое делает её формы примитивными,
                     как творчество ребёнка или рисунки первобытных времён. Примитивизм возникает как в рамках профессионалов,
@@ -310,13 +360,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Rousseau.jpg">
+                            <img src="Art_directions/Primitivism/Rousseau.jpg">
                         </div>
                         <div class="art_text">А. Руссо</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Pirosmani.jpg">
+                            <img src="Art_directions/Primitivism/Pirosmani.jpg">
                         </div>
                         <div class="art_text">Н. Пиросмани</div>
                     </div>
@@ -324,16 +374,31 @@
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art51"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p6 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art6">
+                            <div class="container_art_small">
+                                <div class="art art51"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art52"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art53"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art54"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container_art_small">
-                        <div class="art art52"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n6 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -344,7 +409,7 @@
                 <div class="main title">Конструктивизм</div>
                 <div class="button_tags">
                     <div class="tags">лаконичность, практицизм</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Constructivism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">Главной особенностью данного стиля является строгий геометризм, геометрические формы,
                     точная прорисовка, ровные линии, лаконичность и монолитность всего произведения в целом.
@@ -355,13 +420,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Rodchenko.jpg">
+                            <img src="Art_directions/Constructivism/Rodchenko.jpg">
                         </div>
                         <div class="art_text">А. Родченко</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Tatlin.jpg">
+                            <img src="Art_directions/Constructivism/Tatlin.jpg">
                         </div>
                         <div class="art_text">В. Татлин</div>
                     </div>
@@ -369,16 +434,31 @@
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art61"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p7 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art7">
+                            <div class="container_art_small">
+                                <div class="art art61"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art62"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art63"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art64"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container_art_small">
-                        <div class="art art62"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n7 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -389,7 +469,7 @@
                 <div class="main title">Дадаизм</div>
                 <div class="button_tags">
                     <div class="tags">коллаж</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Dada.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">В изобразительном искусстве наиболее распространённой формой творчества дадаистов
                     был коллаж — технический приём создания произведения из определённым образом скомпонованных и
@@ -402,30 +482,45 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Tzara.jpg">
+                            <img src="Art_directions/Dada/Arp.jpg">
                         </div>
-                        <div class="art_text">Т. Тцара</div>
+                        <div class="art_text">Ж. Арп</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Duchamp.jpg">
+                            <img src="Art_directions/Dada/Ernst.jpg">
                         </div>
-                        <div class="art_text">М. Дюшан</div>
+                        <div class="art_text">М. Эрнст</div>
                     </div>
                 </div>
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art71"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p8 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art8">
+                            <div class="container_art_small">
+                                <div class="art art71"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art72"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art73"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art74"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                        <div class="container_art_small">
-                        <div class="art art72"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n8 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -436,7 +531,7 @@
                 <div class="main title">Сюрреализм</div>
                 <div class="button_tags">
                     <div class="tags">аллюзии, ирреальность</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Surrealism.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">Течение в авангардном искусстве первой половины двадцатого века, характеризуемое
                     слиянием реальности с чем-то другим, но не оппозиционным. Сюрреализм — это сон — он не реальный,
@@ -447,30 +542,45 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Dali.jpg">
+                            <img src="Art_directions/Surrealism/Dali.jpg">
                         </div>
                         <div class="art_text">С. Дали</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Breton.jpg">
+                            <img src="Art_directions/Surrealism/Magritt.jpg">
                         </div>
-                        <div class="art_text">А. Бретон</div>
+                        <div class="art_text">Р. Магритт</div>
                     </div>
                 </div>
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art81"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p9 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art9">
+                            <div class="container_art_small">
+                                <div class="art art81"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art82"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art83"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art84"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container_art_small">
-                        <div class="art art82"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n9 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -481,7 +591,7 @@
                 <div class="main title">Поп-арт</div>
                 <div class="button_tags">
                     <div class="tags">предметность, бытовая направленность</div>
-                    <a href="#" class="button">подробнее</a>
+                    <a href="Pop_art.html" class="button animsition-link">подробнее</a>
                 </div>
                 <div class="review">Направление в изобразительном искусстве Западной Европы и США конца 1950—1960-х годов,
                     возникшее как реакция отрицания на абстрактный экспрессионизм. В качестве основного предмета и образа
@@ -494,13 +604,13 @@
                 <div class="best">
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Warhol.jpg">
+                            <img src="Art_directions/Pop-art/Warhol.jpg">
                         </div>
                         <div class="art_text">Э. Уорхол</div>
                     </div>
                     <div class="guy">
                         <div class="img">
-                            <img src="Art/Liechtenstein.jpg">
+                            <img src="Art_directions/Pop-art/Liechtenstein.jpg">
                         </div>
                         <div class="art_text">Р. Лихтенштейн</div>
                     </div>
@@ -508,16 +618,31 @@
             </div>
             <div class="gallery">
                 <div class="title">Галерея работ</div>
-                <div class="content_art">
-                    <div class="container_art_small">
-                        <div class="art art91"></div>
-                        <div class="border2"></div>
+                <div class="slider">
+                    <svg class="p10 prev" width="30" height="60" viewBox="0 0 30 60">
+                        <polygon points="0,30 30,60 30,0" />
+                    </svg>
+                    <div class="limiter">
+                        <div class="content_art" id="content_art10">
+                            <div class="container_art_small">
+                                <div class="art art91"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art92"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art93"></div>
+                                <div class="border2"></div>
+                            </div>
+                            <div class="container_art_small">
+                                <div class="art art94"></div>
+                                <div class="border2"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container_art_small">
-                        <div class="art art92"></div>
-                        <div class="border2"></div>
-                    </div>
-                    <svg class="next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n10 next" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>

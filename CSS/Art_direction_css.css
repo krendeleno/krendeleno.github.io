@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 960px;
+}
+/* Modal */
+.arrow {
+    cursor: pointer;
+    height: 5vw;
+    width: 5vw;
+    background: url("../Art/arrow.png") center 40% no-repeat;
+    background-size: cover;
+
+}
+
+.prev {
+    transform: rotate(180deg);
+    margin-left: 5vw;
+
+}
+
+.arrow:hover, .close:hover {
+    transform: scale(1.2);
+    transition: all .1s linear;
+}
+
+.prev:hover {
+    transform: scale(1.2) rotate(180deg);
+}
+.next {
+
+    margin-right: 5vw;
+
+}
+
+.title_modal {
+    display: flex;
+    flex-direction: row;
+}
+.text-modal {
+    margin-bottom: 10px;
+    font-size: 1.2vw;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+
+}
+.modal {
+    align-items: center;
+    --animate-duration: .3s;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 100;
+    overflow: auto;
+}
+
+.modal-content {
+    --animate-duration: .5s;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+
+    display: flex;
+}
+
+.close {
+    top:15%;
+    margin-left: auto;
+    cursor: pointer;
+    font-size:  3vw;
+    position: relative;
+}
+
+.title {
+    font-size: 8vw;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+
+}
+
+/* Navigation */
+
+.container {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+
+}
+
+.nav_link {
+    position: relative;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+.nav_link:hover {
+    color: darkred;
+}
+
+.nav_link:after {
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: block;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: darkred;
+    position: absolute;
+    transition: opacity .1s linear;
+}
+.nav_link:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+.nav {
+    font-size:  1.5vw;
+}
+.scroll_menu {
+    display: none;
+    padding-top: 1vh;
+    position: fixed;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 99;
+    height: 4vh;
+}
+
+.scroll_menu .nav_link {
+    color: black;
+}
+/* Grid */
+
+
+.box {
+    position: relative;
+    overflow: hidden;
+    transition: all .1s linear;
+
+}
+
+.art_content {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .2s linear;
+}
+
+.art_content:hover {
+    opacity: 1;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.5vw;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.down_text {
+    margin: 0 10%;
+    border-top: 1px solid white;
+}
+.border {
+    z-index: 50;
+    width: 80%;
+    height: 50%;
+    top: 5%;
+    left: 0;
+    position: absolute;
+    border: solid 1px black;
+}
+
+.border2 {
+    z-index: 50;
+    width: 40%;
+    height: 15%;
+    top: 5%;
+    left: 23%;
+    position: absolute;
+    border: solid 1px black;
+}
+.inf {
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1vw;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+
+.art_text {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: black;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.5vw;
+}
+
+.title_text {
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.img {
+
+    float: left;
+    margin-right: 25px;
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+

@@ -1,0 +1,464 @@
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+    min-width: 960px;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+a {
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: black;
+}
+
+
+.content {
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+/* Navigation */
+.container {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+
+}
+
+.scroll_menu {
+    display: none;
+    padding-top: 1vh;
+    position: fixed;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    height: 4vh;
+}
+
+.nav_link {
+    position: relative;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+.nav_link:hover {
+    color: darkred;
+}
+
+.nav_link:after {
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: block;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: darkred;
+    position: absolute;
+    transition: opacity .1s linear;
+}
+.nav_link:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+.header_logo {
+    font-size: 1.5vw;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.nav {
+    font-size:  1.5vw;
+}
+
+/* Column1 */
+
+.column1{
+    margin-right: 5vw;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content_art {
+    width: 50vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.border2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: solid 1px black;
+    width: 15vw;
+    height: 15vw;
+    z-index: -1;
+}
+#content_art1 {
+    transform: translateX(0px);
+}
+.container_art_small {
+    position: relative;
+}
+
+.next, .prev{
+    fill: white;
+    stroke: black;
+    stroke-width: 1px;
+
+}
+
+.prev {
+    margin-right: 20px;
+    stroke: lightgrey;
+}
+
+.next {
+    margin-left: 20px;
+}
+
+.art {
+    margin-right: 2vw;
+    background-size: cover;
+    width: 15vw;
+    height: 15vw;
+}
+
+.art01 {
+    background: url("../Art/Expressionism1.jpg") center;
+}
+.art02 {
+     background: url("../Art/Expressionism2.jpg") center;
+ }
+.art03 {
+    background: url("../Art_directions/Expressionism/The_bride_of_the_wind_1914.jpg") center;
+
+}
+.art04 {
+    background: url("../Art_directions/Expressionism/Night_1918.jpg") center;
+
+}
+
+.art11 {
+    background: url("../Art_directions/Suprematism/Black_Square.jpg") center;
+}
+.art12 {
+    background: url("../Art_directions/Suprematism/Broadway_Boogie_Woogie.jpg") center;
+}
+
+.art13 {
+    background: url("../Art_directions/Suprematism/Sportsmen_1930_31.jpg") center;
+}
+.art14 {
+    background: url("../Art_directions/Suprematism/Yellow_Red_Blue_1925.jpg") center;
+}
+
+.art21 {
+    background: url("../Art_directions/Cubism/Guernica_1937.jpg") center;
+}
+.art22 {
+    background: url("../Art_directions/Cubism/Les_Demoiselles_dAvignon_1907.jpg") center;
+}
+
+.art23 {
+    background: url("../Art_directions/Cubism/Portrait_of_Picasso_1912.jpg") center;
+}
+.art24 {
+    background: url("../Art_directions/Cubism/Landscape_at_La_Ciotat_1907.jpg") center;
+}
+
+.art31 {
+    background: url("../Art_directions/Rayonism/Blue_rayonism_1915.jpg") center;
+}
+.art32 {
+    background: url("../Art_directions/Rayonism/Bouqet_with_dandelion_1960.jpg") center;
+}
+
+.art33 {
+    background: url("../Art_directions/Rayonism/Abstract_composition_1960.jpg") center;
+}
+.art34 {
+    background: url("../Art_directions/Rayonism/Rayonism_composition_1914.jpg") center;
+}
+
+.art41 {
+    background: url("../Art_directions/Futurism/Tram_1911.jpg") center;
+}
+.art42 {
+    background: url("../Art_directions/Futurism/Elasticity_1912.jpg") center;
+}
+
+.art43 {
+    background: url("../Art_directions/Futurism/Boulevard_1911.jpg") center;
+}
+.art44 {
+    background: url("../Art_directions/Futurism/Dynamism_of_the_car_1913.jpg") center;
+}
+
+.art51 {
+     background: url("../Art_directions/Primitivism/Unicorn_1961.jpg") center;
+ }
+.art52 {
+    background: url("../Art_directions/Primitivism/Tiger_in_a_tropical_storm_1891.jpg") top;
+}
+
+.art53 {
+    background: url("../Art_directions/Primitivism/Actress_Margarita_1909.jpg") top;
+}
+.art54 {
+    background: url("../Art_directions/Primitivism/Fisherman_in_a_Red_Shirt_1908.jpg") top;
+}
+
+.art61 {
+    background: url("../Art_directions/Constructivism/Non-objective_composition_n_88_1919.jpg") center;
+}
+.art62 {
+    background: url("../Art_directions/Constructivism/Summer_day_1929.jpg") center;
+}
+
+.art63 {
+    background: url("../Art_directions/Constructivism/Composition_1918.jpg") center;
+}
+.art64 {
+    background: url("../Art_directions/Constructivism/Tatlins_Tower_1925.jpg") center;
+}
+
+.art71 {
+    background: url("../Art_directions/Dada/Geometric_collage_1916.jpg") center;
+}
+.art72 {
+    background: url("../Art_directions/Dada/Collage_with_Squares_Arranged_According_to_the_Laws_of_Chance_1917.jpg") center;
+}
+
+.art73 {
+    background: url("../Art_directions/Dada/Strange_shapes_1919.jpg") center;
+}
+.art74 {
+    background: url("../Art_directions/Dada/Мz231_1923.jpg") center;
+}
+
+.art81 {
+    background: url("../Art_directions/Surrealism/The_Persistence_of_Memory_1931.jpg") center;
+}
+.art82 {
+    background: url("../Art_directions/Surrealism/Premonition_of_Civil_War_1936.jpg") top;
+}
+
+.art83 {
+    background: url("../Art_directions/Surrealism/Dream_Caused_by_the_Flight_of_a_Bee_Around_a_Pomegranate_a_Second_Before_Awakening_1944.jpg") center;
+}
+.art84 {
+    background: url("../Art_directions/Surrealism/The_Son _of_Man_1964.jpg") top;
+}
+
+.art91 {
+    background: url("../Art_directions/Pop-art/Campbells_Soup_Cans_1962.jpg") center;
+}
+.art92 {
+    background: url("../Art_directions/Pop-art/Marilyn_Diptych_1962.jpg") center;
+}
+
+.art93 {
+    background: url("../Art_directions/Pop-art/Standart_station_1966.jpg") center;
+}
+.art94 {
+    background: url("../Art_directions/Pop-art/Mao_1972.jpg") center;
+}
+
+.best {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.guy {
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.title {
+    color: black;
+    margin-bottom: 20px;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+.main {
+    grid-column: 1;
+    grid-row: 1;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+    border: solid 1px black;
+    width: 35vw;
+    font-size: 3.5vw;
+}
+
+.review {
+    text-align: justify;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    font-size: 1.3vw;
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.button {
+    position: absolute;
+    margin-top: 0.5vh;
+    left: -60px;
+    font-size: 1.5vw;
+    padding: 5px;
+    background: black;
+    color: white;
+    transition: all .2s linear;
+}
+
+.button:hover {
+    background: darkred;
+}
+.button_tags {
+    position: relative;
+}
+.tags {
+    margin-bottom: 5px;
+    padding-top:10px;
+    font-size: 1.7vw;
+    color: darkgray;
+     grid-column: 2;
+     grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+ }
+
+.tags {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.art_text {
+    color: black;
+    padding-top: 20px;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.3vw;
+}
+
+.direction {
+    padding-bottom:5vh;
+    padding-top:20vh;
+    grid-gap: 15px;
+    display: grid;
+}
+
+.about {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.painter {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.gallery{
+    width: 40vw;
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+.slider {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.limiter {
+    width: 33vw;
+    overflow: hidden;
+    height: 16vw;
+}
+.img {
+    margin: 0 auto ;
+    float: left;
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Scrollbar */
+.column2 {
+
+
+}
+
+.scroll {
+    padding-left: 5px;
+    border-left: solid black 1px ;
+    margin-top: 20vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+}
+
+.scroll a {
+    font-size: 1.5vw;
+    margin: 1.5vh;
+    text-align: left;
+    transition: all .1s linear;
+}
+
+.scroll  a:hover {
+    color: darkgray;
+    transform: scale(1.1);
+}

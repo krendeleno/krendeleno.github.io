@@ -1,0 +1,293 @@
+body {
+    min-height: 900px;
+    min-width: 500px;
+    margin: 0;
+}
+
+.context {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Navigation */
+.header {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+
+}
+
+.nav_link {
+    position: relative;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: darkred;
+}
+
+.nav_link:after {
+    top: 100%;
+    left: 0;
+    display: block;
+    opacity: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: darkred;
+    position: absolute;
+    transition: opacity .1s linear;
+}
+
+.nav_link:hover:after {
+    display: block;
+    opacity: 1;
+}
+
+.nav {
+    font-size: 1.5vw;
+}
+
+/* Box */
+.context {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.variety {
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.5vw;
+    text-align: center;
+    grid-auto-rows: minmax(10vh, auto);
+    display: grid;
+    grid-gap: 15px;
+}
+
+.text {
+    color: black;
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    line-height: 100%;
+    text-decoration: none;
+    transition: all .1s linear;
+}
+
+.box:hover {
+    background: darkred;
+    color: white;
+    cursor: pointer;
+}
+
+.box:active {
+    opacity: 0.6;
+    background: darkred;
+    color: white;
+}
+
+.box1 {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.box2 {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.box3 {
+    grid-column: 3;
+    grid-row: 1/4;
+}
+
+.box4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.box5 {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.box6 {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.box7 {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.box8 {
+    grid-column: 1;
+    grid-row: 4/7;
+}
+
+.box9 {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.box10 {
+    grid-column: 3/5;
+    grid-row: 4;
+}
+
+.box11 {
+    grid-column: 2;
+    grid-row: 5/7;
+}
+
+.box12 {
+    grid-column: 3;
+    grid-row: 5/8;
+}
+
+
+.box13 {
+    grid-column: 4;
+    grid-row: 5/8;
+}
+
+.box14 {
+    grid-column: 1/3;
+    grid-row: 7;
+}
+
+/* Modal Window */
+.modal {
+    --animate-duration: .3s;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    transition: opacity 1s linear;
+}
+
+.modal_window {
+    --animate-duration: .5s;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: 70vw;
+    height: auto;
+    background: white;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all .1s linear;
+}
+
+.img:hover {
+    transform: scale(1.2);
+}
+
+img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.border {
+    position: absolute;
+    border: black solid 1px;
+    left: 15vw;
+    width: 30vw;
+    height: 5vw;
+}
+
+.al {
+    left: 30vw;
+}
+
+.close {
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: darkgray;
+}
+
+.writers {
+    display: flex;
+    flex-direction: row;
+}
+
+.guy {
+    margin-right: 2vw;
+}
+
+.art_text {
+    text-align: center;
+    color: black;
+    padding-top: 30px;
+    font-family: 'Rubik', Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 1.3vw;
+}
+
+.title {
+    margin-bottom: 3vh;
+    font-weight: 400;
+    font-size: 5vw;
+}
+
+.title2 {
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+
+p {
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+

@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="Aleatorics_css.css" rel="stylesheet">
+    <link href="CSS/Aleatorics_css.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Rubik:300,400&display=swap&subset=cyrillic" rel="stylesheet">
-    <script src="jquery-3.4.1.min.js" charset="utf-8"></script>
-    <script src="Aleatorics_js.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.0.3/dist/amplitude.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+    <script src="JS/Page_transitions.js"></script>
+    <script src="JS/Aleatorics_js.js" charset="utf-8"></script>
     <title>Алеаторика</title>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="Variety_Art.html" class="nav_link">Живопись</a>
-                <a href="Variety_Literature.html" class="nav_link">Литература</a>
-                <a href="Variety_Music.html" class="nav_link">Музыка</a>
-            </nav>
-        </div>
-    </header>
+<body class="animsition"
+      data-animsition-in-class="zoom-in">
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="Variety_Art.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Живопись</a>
+            <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
+            <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
+        </nav>
+    </div>
+</header>
     <div class="content">
         <div class="column1">
             <div class="about">
@@ -30,7 +37,7 @@
                         элементами музыкальной ткани (в том числе нотного текста) и музыкальной формы и предполагающая
                         неопределённость или случайную последовательность этих элементов при сочинении или
                         исполнении произведения. </div>
-                <div class="button_content"><div class="text button">Слушать</div></div>
+                <div class="button_content"><div class="text button amplitude-play">Слушать</div></div>
 
             </div>
             <div class="audio_content">
@@ -42,15 +49,17 @@
                 <div class="track">
                     <div class="name">1. Карлхайнц Штокхаузен</div>
                     <div class="name">Studie No.1</div>
-                    <div class="audio">
-                        <audio id="track1" src="Music/Studie%20No.%201.mp3" controls="controls"></audio>
+                    <div class="audio" id="0">
+                        <div class="pause-icon small amplitude-play-pause" data-amplitude-song-index="0"></div>
+                        <div class="stop-icon small amplitude-stop" ></div>
                     </div>
                 </div>
                 <div class="track">
                     <div class="name">2. Карлхайнц Штокхаузен</div>
                     <div class="name">Studie No.2</div>
-                    <div class="audio">
-                        <audio id="track2" src="Music/Studie%20No.%202.mp3" controls="controls"></audio>
+                    <div class="audio" id="1">
+                        <div class="pause-icon small amplitude-play-pause" data-amplitude-song-index="1"></div>
+                        <div class="stop-icon small amplitude-stop" ></div>
                     </div>
                 </div>
             </div>
@@ -87,27 +96,43 @@
 
     </div>
     <div class="player">
-
-            <progress value="33" max="100"></progress>
-
+        <div id="progress-container">
+            <div class="amplitude-wave-form"></div>
+            <input type="range" class="amplitude-song-slider"/>
+            <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+            <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+        </div>
         <div class="controls">
-            <div class="prev">
-                <div class="prev-icon"></div>
+            <div class="control amplitude-prev">
+                <div class="icon prev-icon"></div>
             </div>
-            <div class="pause">
-                <div class="pause-icon"></div>
+            <div class="control amplitude-play-pause">
+                <div class="icon pause-icon"></div>
             </div>
-            <div class="next">
-                <div class="next-icon"></div>
+            <div class="control amplitude-next">
+                <div class="icon next-icon "></div>
             </div>
             <div class="track-container">
-                <div class="title text">Я эмси кек</div>
-                <div class="author text">Кек</div>
+                <div class="title text" data-amplitude-song-info="name"></div>
+                <div class="author text" data-amplitude-song-info="artist"></div>
             </div>
-            <div class="time text">4:34</div>
-            <div class="volume"></div>
-            <div class="shuffle"></div>
-            <div class="download"></div>
+            <div class="time text">
+                <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>/
+                <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+            </div>
+            <div class="control mute amplitude-mute">
+                <div class="icon mute-icon"></div>
+            </div>
+            <div class="control volume">
+                <div class="volume-wrapper"><input type="range" class="amplitude-volume-slider"/></div>
+                <div class="icon volume-icon"></div>
+            </div>
+            <div class="control shuffle amplitude-shuffle">
+                <div class="icon shuffle-icon"></div>
+            </div>
+            <div class="control download">
+                <a href="Music/Studie No. 1.mp3" download><div class="icon download-icon"></div></a>
+            </div>
         </div>
     </div>
 </body>

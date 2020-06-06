@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="Variety_Music_css.css" rel="stylesheet">
+    <link href="CSS/Variety_Music_css.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Rubik:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Музыкальный авангард</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+    <script src="JS/Page_transitions.js"></script>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="Variety_Art.html" class="nav_link">Живопись</a>
-                <a href="Variety_Literature.html" class="nav_link">Литература</a>
-                <a href="Variety_Music.html" class="nav_link">Музыка</a>
-            </nav>
-        </div>
-    </header>
+<body class="animsition"
+      data-animsition-in-class="fade-in-right"
+      data-animsition-out-class="zoom-out">
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="Variety_Art.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Живопись</a>
+            <a href="Variety_Literature.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Литература</a>
+            <a href="Variety_Music.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Музыка</a>
+        </nav>
+    </div>
+</header>
     <div class="context">
-
-        <a href="Aleatorics.html"><div class="variety">
+        <div class="variety">
+        <a href="Aleatorics.html" class="animsition-link">
         <div class="option">
              Алеаторика
         </div></a>
-        <a href="#"><div class="option">
+        <a href="#" class="animsition-link"><div class="option">
              Конкретная музыка
         </div></a>
-        <a href="#"><div class="option">
+        <a href="#" class="animsition-link"><div class="option">
              Сонористика
         </div></a>
-        <a href="#"><div class="option">
+        <a href="#" class="animsition-link"><div class="option">
              Электронная музыка
         </div></a>
-        <a href="#"> <div class="option">
+        <a href="#" class="animsition-link"> <div class="option">
             Минимализм
         </div></a>
-        <a href="#"><div class="option last">
+        <a href="#" class="animsition-link"><div class="option last">
              Сериализм
         </div></a>
-    </div>
     </div>
 </body>
 </html>
