@@ -639,3 +639,133 @@ input[type=range].amplitude-volume-slider::-ms-tooltip {
     transform: rotate(-90deg);
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        height: 210vh;
+        width: 100%;
+        min-width: 200px;
+    }
+    .content {
+        grid-template-columns: 100%;
+
+        height: auto;
+    }
+
+    .column1 {
+        margin-top: 10vh;
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .border {
+        left: 40%;
+        height: 15%;
+        width: 50%;
+    }
+
+    .name {
+        padding-right: 0;
+        text-align: left;
+        font-size: 4vw;
+        width: 33%;
+    }
+
+    .sample.track {
+        justify-content: space-between;
+    }
+    .sample.name {
+        width: auto;
+}
+    .audio {
+        margin-right: 0;
+    }
+
+    .small {
+        width: 7vw;
+        height: 7vw;
+    }
+    .button_content {
+        position: relative;
+        margin: 0;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        width: 100%;
+        margin-left: 0;
+    }
+    .c {
+        padding-right: 4vw;
+    }
+    .column2_content {
+
+        grid-gap: 30px;
+    }
+    .column2 {
+        padding-left: 0;
+        margin-top: 5vh;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .img {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .art_text {
+        font-size: 3vw;
+    }
+    .title_text2 {
+        font-size: 5vw;
+    }
+    .text {
+        font-size: 3vw;
+    }
+
+    .button p {
+        font-size: 5vw;
+    }
+    .title_text {
+        font-size: 10vw;
+        text-align: center;
+    }
+    .cover,.border2 {
+        display: none;
+    }
+
+    .player {
+        height: 25vh;
+    }
+
+    .player .text {
+        font-size: 3vw;
+    }
+
+    .time {
+        margin-right: 0;
+        margin-left: 6vw;
+        width: 10%;
+    }
+
+    .icon {
+        height: 80%;
+        top:0;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .control {
+        width: 15vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .download, .mute, .shuffle {
+        display: none;
+    }
+
+}

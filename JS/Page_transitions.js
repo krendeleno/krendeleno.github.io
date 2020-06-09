@@ -5,7 +5,7 @@ $(function() {
     $(".animsition").animsition({
         inClass: 'fade-in',
         outClass: 'fade-out',
-        inDuration: 100,
+        inDuration: 500,
         outDuration: 800,
         linkElement: '.animsition-link',
         // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'

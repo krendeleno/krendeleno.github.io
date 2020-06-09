@@ -7,13 +7,13 @@ $(function() {
                 "name": "Studie No.1",
                 "artist": "Карлхайнц Штокхаузен",
                 "album": "Album Name",
-                "url": "https://psv4.vkuseraudio.net/c4526/u632200/audios/f0525ce63c42.mp3?extra=Z0NrPRBEVUEvFC29NiwvhF9HOXMx6MO0xfe0Qua1ooP0LG7GhyL04T8d8KnNoIeWkv7Aney30gq-QTlfk7Nzm2Oji5SkX5UgPICpxjtZ8jq6OCXJY7BmH5BS03YdXSz_FcMNsQy0KK--eAzSu9Hixinqjg"
+                "url": "Music/Studie No. 1.mp3"
             },
             {
                 "name": "Studie No.2",
                 "artist": "Карлхайнц Штокхаузен",
                 "album": "Album Name",
-                "url": "https://psv4.vkuseraudio.net/c4526/u632200/audios/3e083261b68e.mp3?extra=yVYIDewpi1JqzaQEhcP7X3BzGYC9Jk6dZuR9O1g61feI_CEAqxlp0WGUThtudiVVD8eHlzQ7r9EzY8rgyBzgOM1ooEncQmiAbLKEtf-7TP_orlSdX17A_1pMlyedXwpmpZpBVmn28rL3eriZdysrbFQ"
+                "url": "Music/Studie No. 2.mp3"
             }
         ]
     });

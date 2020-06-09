@@ -88,10 +88,11 @@ body {
 
 .column1 {
     background: url("../Literature/Mayakovsky.jpg");
-    background-position-x: center;
     background-size: cover;
+    background-position-x: 50%;
     grid-column: 1;
     grid-row: 1;
+    z-index: 20;
 }
 
 .column2 {
@@ -99,7 +100,6 @@ body {
     padding-left: 10vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     grid-column: 2;
     grid-row: 1;
     padding-bottom: 20px;
@@ -149,7 +149,7 @@ li {
 
 .a:hover {
     color: grey;
-
+    cursor: pointer;
 }
 
 .author:hover {
@@ -190,18 +190,14 @@ li {
     padding-right: 30px;
 }
 
-.block:hover .bio {
-    display: block;
+a {
+    text-decoration: none;
 }
 
-#bio:not(:target) {
+.poem {
     display: none;
 }
 
-#bio:target {
+.first.poem {
     display: block;
-}
-
-a {
-    text-decoration: none;
 }

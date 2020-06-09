@@ -15,7 +15,10 @@ a {
     color: black;
 }
 
-
+.review.info {
+    color: darkgray;
+    margin-top: 15vh;
+}
 .content {
     margin-right: 5%;
     margin-left: 5%;
@@ -461,4 +464,8 @@ img {
 .scroll  a:hover {
     color: darkgray;
     transform: scale(1.1);
+}
+
+.direction.first {
+    padding-top: 2vh;
 }
