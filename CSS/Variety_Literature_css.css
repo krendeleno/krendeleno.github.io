@@ -513,6 +513,7 @@ p.info {
 
     .modal_window p {
         font-size: 3.5vw;
+        text-align: justify;
     }
 
     .title2 {
