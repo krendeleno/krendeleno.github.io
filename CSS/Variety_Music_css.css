@@ -106,7 +106,7 @@ a {
     transform: scale(1);
 }
 
-.hamburger, .menu, .close {
+.hamburger, .menu, .closew {
     display: none;
 }
 @media screen and (max-width: 600px) {
@@ -115,7 +115,7 @@ a {
         min-width: 200px;
         min-height: auto;
     }
-    .modal {
+    .modalw {
         --animate-duration: .3s;
         display: none;
         flex-direction: column;
@@ -174,7 +174,7 @@ a {
         width: 70%;
     }
 
-    .menu, .close {
+    .menu, .closew {
         margin-bottom: 5vh;
         display: block;
         font-family: 'Rubik', Helvetica, sans-serif;
@@ -187,7 +187,7 @@ a {
         display: block;
     }
 
-    .close {
+    .closew {
         text-align: right;
         position: relative;
         margin-bottom: 20vh;

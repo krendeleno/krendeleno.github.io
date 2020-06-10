@@ -646,7 +646,7 @@ input[type=range].amplitude-volume-slider::-ms-tooltip {
     display: none;
 }
 @media screen and (max-width: 600px) {
-    .modal {
+    .modalw {
         --animate-duration: .3s;
         display: none;
         flex-direction: column;

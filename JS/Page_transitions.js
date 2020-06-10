@@ -2,12 +2,12 @@ $(function() {
     //hamburger
     $(".hamburger").click( function () {
         $(".container").css("left","0");
-        $(".modal").css("display", "flex");
+        $(".modalw").css("display", "flex");
     });
 
-    $(".close").click( function () {
+    $(".closew").click( function () {
         $(".container").css("left","-999px");
-        $(".modal").css("display", "none");
+        $(".modalw").css("display", "none");
     });
 
     //Page transitions

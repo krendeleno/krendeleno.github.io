@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="CSS/Variety_Literature_css.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Rubik:300,400&display=swap&subset=cyrillic" rel="stylesheet">
@@ -573,14 +574,20 @@
             </div>
         </div>
     </div>
+    <div class="modalw animate__animated animate__fadeIn"></div>
     <header class="header">
+        <div class="hamburger"></div>
         <div class="container">
-            <a href="index.html" class="nav_link animsition-link">Главная</a>
-            <nav class="nav">
-                <a href="Variety_Art.html" class="nav_link animsition-link">Живопись</a>
-                <a href="Variety_Literature.html" class="nav_link animsition-link">Литература</a>
-                <a href="Variety_Music.html" class="nav_link animsition-link">Музыка</a>
-            </nav>
+            <div class="closew">×</div>
+            <div class="m_content">
+                <div class="menu">Меню</div>
+                <a href="index.html" class="nav_link animsition-link">Главная</a>
+                <nav class="nav">
+                    <a href="Variety_Art.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Живопись</a>
+                    <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
+                    <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
+                </nav>
+            </div>
         </div>
     </header>
     <div class="context">

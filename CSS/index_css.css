@@ -261,7 +261,7 @@ h1 {
     margin: 0 auto;
 }
 
-.hamburger, .menu, .close, .media {
+.hamburger, .menu, .closew, .media {
     display: none;
 }
 
@@ -273,7 +273,7 @@ h1 {
         height: 300vh;
         min-width: 200px;
     }
-    .modal {
+    .modalw {
         --animate-duration: .3s;
         display: none;
         flex-direction: column;
@@ -331,7 +331,7 @@ h1 {
         width: 70%;
     }
 
-    .menu, .close {
+    .menu, .closew {
         margin-bottom: 5vh;
         display: block;
         font-family: 'Rubik', Helvetica, sans-serif;
@@ -342,7 +342,7 @@ h1 {
         display: block;
         margin-bottom: 15vh;
     }
-    .close {
+    .closew {
         text-align: right;
         position: relative;
         margin-bottom:20vh;
