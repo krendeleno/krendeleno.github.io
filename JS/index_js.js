@@ -1,5 +1,19 @@
 $(function() {
 
+    //Some minor adjustments
+    function id() {
+        if ( $( window ).width() < 600 ) {
+            $(".about").attr('id', 'notification');
+            $(".notification").removeAttr("id");
+        } else {
+            $(".notification").attr('id', 'notification');
+            $(".about").removeAttr("id");
+        }
+    }
+    id();
+    $( window ).resize(function() {
+        id();
+    });
     //Animation
     AOS.init({
         // Global settings:

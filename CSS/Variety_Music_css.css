@@ -12,13 +12,13 @@ body {
     width: 100%;
 }
 
- .container {
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-}
 
 /* Navigation */
+.container {
+    margin: auto;
+    font-size: 1.5vw;
+    width: 90%;
+}
 
 .header {
     padding-bottom: 30px;
@@ -63,6 +63,10 @@ body {
     font-size: 1.5vw;
 }
 
+.m_content {
+    display: flex;
+    justify-content: space-between;
+}
 /* Options */
 a {
     text-decoration: none;
@@ -84,13 +88,11 @@ a {
 }
 
 .variety {
-    margin-top: 50px;
     vertical-align: top;
     width: 60%;
     text-align: center;
     display: block;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto auto;
 }
 
 .option:hover {
@@ -102,4 +104,120 @@ a {
 .option:active {
     color: white;
     transform: scale(1);
+}
+
+.hamburger, .menu, .close {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    body {
+        height: 100vh;
+        min-width: 200px;
+        min-height: auto;
+    }
+    .modal {
+        --animate-duration: .3s;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 490;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hamburger {
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        background: url("../Music/burger.png") center no-repeat;
+        background-size: contain;
+        margin-left: 5%;
+    }
+
+    .container {
+        top: 0;
+        height: 100vh;
+        z-index: 500;
+        position: fixed;
+        left: -999px;
+        flex-direction: column;
+        font-size: 5vw;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        background-color: darkred;
+        transition: all .5s linear;
+    }
+
+    .nav {
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav_link, .menu, .close {
+        margin-bottom: 3vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        color: white;
+        text-align: left;
+    }
+
+    .nav_link {
+        width: 70%;
+    }
+
+    .menu, .close {
+        margin-bottom: 5vh;
+        display: block;
+        font-family: 'Rubik', Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 8vw;
+    }
+
+    .m_content {
+        margin-bottom: 15vh;
+        display: block;
+    }
+
+    .close {
+        text-align: right;
+        position: relative;
+        margin-bottom: 20vh;
+        z-index: 510;
+        margin-right: 4vw;
+    }
+
+    .nav_link:after, .menu:after {
+        opacity: 1;
+        display: block;
+        background-color: white;
+    }
+
+    .content {
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    .variety {
+        width: 80%;
+    }
+
+    .option {
+        text-align: center;
+        font-size: 8vw;
+        width: 100%;
+    }
+
+    .variety a {
+        display: flex;
+        justify-content: center;
+    }
 }

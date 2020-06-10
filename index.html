@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="CSS/index_css.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Rubik:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -18,17 +20,24 @@
 </head>
 
 <body class="animsition">
+<div class="modal animate__animated animate__fadeIn"></div>
+<header class="header">
+    <div class="hamburger"></div>
+    <div class="container">
+        <div class="close">×</div>
+        <div class="m_content">
+            <div class="menu">Меню</div>
+            <a href="index.html" class="nav_link animsition-link">Главная</a>
+            <nav class="nav">
+                <a href="Variety_Art.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Живопись</a>
+                <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
+                <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
+            </nav>
+        </div>
+    </div>
+</header>
     <div class="all_container">
     <section class="intro">
-        <header class="header">
-            <div class="container">
-                <nav class="nav">
-                    <a href="Variety_Art.html" class="nav_link animsition-link">Живопись</a>
-                    <a href="Variety_Literature.html" class="nav_link animsition-link">Литература</a>
-                    <a href="Variety_Music.html" class="nav_link animsition-link">Музыка</a>
-                </nav>
-            </div>
-        </header>
         <div  class="name">
             <div class="inner_name">
                 <h1>АВАНГАРД</h1>
@@ -51,12 +60,15 @@
                 <h2> Музыка </h2></a>
             </div>
 
-            <div class="button" id="notification" data-aos="fade-up" data-aos-anchor=".direction">
+            <div class="button notification" id="notification" data-aos="fade-up" data-aos-anchor=".direction">
                 <div class="notification_inner">
                     <p>Авангард затронул множество сфер жизни, выберете направление, которое вас интересует.</p>
                 </div>
             </div>
 
+            <svg class="media tr" width="40" height="80" data-aos="fade-down" data-aos-delay="1000">
+                <polygon points="0,0 20,20 40,0"/>
+            </svg>
             <div class="direction art" data-aos="fade-right" data-aos-delay="1400">
                 <a href="Variety_Art.html" class="dir animsition-link"
                    data-animsition-out-class="fade-out-left">
@@ -66,9 +78,26 @@
                 </svg></a>
             </div>
         </div>
-
-
     </section>
+
+        <div class="media links">
+            <div class="black"></div>
+            <div class="d a">
+                <a href="Variety_Art.html" class="frame animsition-link">
+                    <h2>Живопись</h2>
+                </a>
+            </div>
+            <div class="d l">
+                <a href="Variety_Literature.html" class="frame animsition-link">
+                    <h2>Литература</h2>
+                </a>
+            </div>
+            <div class="d m">
+                <a href="Variety_Music.html" class="frame animsition-link">
+                    <h2>Музыка</h2>
+                </a>
+            </div>
+        </div>
         <div class="direction literature" data-aos="fade-down" data-aos-delay="1000">
             <a href="Variety_Literature.html" class="dir animsition-link"
                data-animsition-out-class="fade-out-up">

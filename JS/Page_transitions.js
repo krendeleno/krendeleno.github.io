@@ -1,5 +1,14 @@
 $(function() {
+    //hamburger
+    $(".hamburger").click( function () {
+        $(".container").css("left","0");
+        $(".modal").css("display", "flex");
+    });
 
+    $(".close").click( function () {
+        $(".container").css("left","-999px");
+        $(".modal").css("display", "none");
+    });
 
     //Page transitions
     $(".animsition").animsition({

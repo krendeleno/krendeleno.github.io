@@ -66,7 +66,13 @@ body {
     opacity: 1;
 }
 
-.intro .container {
+.container {
+    margin: auto;
+    font-size: 1.5vw;
+    width: 90%;
+}
+
+.intro {
     width: 95%;
     display: flex;
     justify-content: flex-end;
@@ -76,6 +82,10 @@ body {
     font-size: 1.5vw;
 }
 
+.m_content {
+    display: flex;
+    justify-content: space-between;
+}
 /* Name */
 .name h1{
     margin: 0;
@@ -251,9 +261,201 @@ h1 {
     margin: 0 auto;
 }
 
-#notification {
- 
+.hamburger, .menu, .close, .media {
+    display: none;
 }
 
+@media screen and (max-width: 600px) {
+    .direction {
+        display: none;
+    }
+    body {
+        height: 300vh;
+        min-width: 200px;
+    }
+    .modal {
+        --animate-duration: .3s;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 490;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        margin: 0;
+        padding: 0;
+    }
 
+    .hamburger {
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        background: url("../Music/burger.png") center no-repeat;
+        background-size: contain;
+        margin-left: 5%;
+    }
+    .container {
+        top:0;
+        height: 100vh;
+        z-index: 500;
+        position: fixed;
+        left:-999px;
+        flex-direction: column;
+        font-size: 5vw;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        background-color: darkred;
+        transition: all .5s linear;
+    }
 
+    .nav {
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav_link, .menu, .close {
+        margin-bottom: 3vh;
+        margin-right: 10vw;
+        margin-left:10vw;
+        color: white;
+        text-align: left;
+    }
+
+    .nav_link {
+
+        width: 70%;
+    }
+
+    .menu, .close {
+        margin-bottom: 5vh;
+        display: block;
+        font-family: 'Rubik', Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 8vw;
+    }
+    .m_content {
+        display: block;
+        margin-bottom: 15vh;
+    }
+    .close {
+        text-align: right;
+        position: relative;
+        margin-bottom:20vh;
+        z-index: 510;
+        margin-right: 4vw;
+    }
+
+    .nav_link:after, .menu:after {
+        opacity: 1;
+        display: block;
+        background-color: white;
+    }
+
+    .intro {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .name h1 {
+        font-size: 20vw;
+    }
+
+    #reference {
+        margin: 2vh auto;
+        padding-top:4vh;
+        padding-bottom:4vh;
+        width:80%;
+    }
+
+    .button h2 {
+        font-size: 5vw;
+    }
+
+    .about {
+        padding-top: 0;
+    }
+    .notification_inner {
+        min-width: auto;
+        width: 80%;
+        padding-top:5vh;
+        padding-bottom:5vh;
+    }
+
+    .line {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .button p {
+        font-size: 4vw;
+    }
+
+    .media {
+        margin: auto;
+        display: block;
+    }
+
+    .tr {
+        margin-top: 30vh;
+    }
+    .black {
+        position: absolute;
+        height: 100vh;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.5);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .links {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .frame {
+        z-index: 200;
+        text-align: center;
+        width: 70%;
+        border: 2px solid white;
+    }
+
+    a.frame {
+        font-weight: 300;
+        font-family: "Rubik", Helvetica, sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+
+    .a {
+        background: url("../Art_directions/Suprematism/Transverse_line.jpg");
+    }
+
+    .l {
+        background-position-y: center;
+        background: url("../Literature/Mayakovsky.jpg");
+    }
+
+    .m {
+        background: url("../Music/Aleatorics.jpg");
+    }
+    .d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33vh;
+        width: 100%;
+        background-size: cover;
+    }
+}
