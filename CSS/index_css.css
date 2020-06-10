@@ -318,7 +318,7 @@ h1 {
         flex-direction: column;
         justify-content: center;
     }
-    .nav_link, .menu, .close {
+    .nav_link, .menu, .closew {
         margin-bottom: 3vh;
         margin-right: 10vw;
         margin-left:10vw;
