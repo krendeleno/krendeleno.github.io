@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="CSS/Variety_Art_css.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,500|Rubik:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Живопись</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
@@ -12,30 +14,43 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="JS/Page_transitions.js"></script>
     <script src="JS/Variety_Art_js.js" charset="utf-8"></script>
 </head>
 <body class="animsition"
       data-animsition-in-class="fade-in-left"
       data-animsition-out-class="zoom-out-sm">
-    <header class="header scroll_menu">
-        <div class="container">
+<header class="header scroll_menu">
+    <div class="container">
+        <div class="m_content">
+            <a href="index.html" class="nav_link animsition-link">Главная</a>
             <nav class="nav">
-                <a href="Variety_Art.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Живопись</a>
+                <a href="Variety_Art.html" class="nav_link animsition-link">Живопись</a>
+                <a href="Variety_Literature.html" class="nav_link animsition-link">Литература</a>
+                <a href="Variety_Music.html" class="nav_link animsition-link">Музыка</a>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="modalw animate__animated animate__fadeIn"></div>
+<header class="header">
+    <div class="hamburger"></div>
+    <div class="container">
+        <div class="closew">×</div>
+        <div class="m_content">
+            <div class="menu">Меню</div>
+            <a href="index.html" class="nav_link i animsition-link">Главная</a>
+            <nav class="nav">
+                <a href="Variety_Art.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Живопись</a>
                 <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
                 <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
             </nav>
         </div>
-    </header>
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="Variety_Art.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Живопись</a>
-                <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
-                <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
-            </nav>
-        </div>
-    </header>
+    </div>
+    <div class="back"></div>
+</header>
     <div class="content">
     <div class="column1">
         <p class="review info">Кликните на кнопку "подробнее", чтобы перейти на страницу направления.</p>
@@ -95,12 +110,13 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n1 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n1 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
             </div>
         </div>
+
         <div class="direction" id="2">
             <div class="about">
                 <div class="main title">Абстракционизм</div>
@@ -155,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n2 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n2 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -216,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n3 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n3 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -278,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n4 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n4 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -339,7 +355,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n5 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n5 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -399,7 +415,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n6 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n6 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -459,7 +475,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n7 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n7 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -521,7 +537,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n8 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n8 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -581,7 +597,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n9 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n9 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -643,7 +659,7 @@
                             </div>
                         </div>
                     </div>
-                    <svg class="n10 next" width="30" height="60" viewBox="0 0 30 60">
+                    <svg class="n10 nxt" width="30" height="60" viewBox="0 0 30 60">
                         <polygon points="0,0 30,30 0,60" />
                     </svg>
                 </div>
@@ -653,6 +669,8 @@
 
     <div class="column2">
         <div class="scroll">
+            <div class="close">×</div>
+            <p class="media">Течения</p>
             <a href="#1">Экспрессионизм</a>
             <a href="#2">Абстракционизм</a>
             <a href="#3">Кубизм</a>

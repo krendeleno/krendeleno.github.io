@@ -642,7 +642,7 @@ input[type=range].amplitude-volume-slider::-ms-tooltip {
     transform: rotate(-90deg);
 }
 
-.hamburger, .menu, .close {
+.hamburger, .menu, .closew {
     display: none;
 }
 @media screen and (max-width: 600px) {

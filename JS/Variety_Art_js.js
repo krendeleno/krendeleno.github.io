@@ -1,6 +1,37 @@
-
-
 $(function () {
+
+    //Слайдеры на телефоне
+    function slider() {
+        if ($(window ).width() <= 600) {
+            $(".content_art").addClass("carousel").flickity({
+                // options
+                wrapAround: true
+            });
+            $(".container_art_small").addClass("carousel-cell");
+        }
+    }
+
+    slider();
+    $( window ).resize(function() {
+        slider();
+    });
+
+    
+    //Правое меню в мобильном дизайне
+    $(".back").click(function () {
+        $(".scroll").css("right","0");
+        $(".modalw").css("display", "flex");
+    });
+
+    function closing() {
+        $(".scroll").css("right","-999px");
+        $(".modalw").css("display", "none");
+    }
+    $(".close").bind("click", closing);
+    $(".scroll a").bind("click", function () {
+       setTimeout(closing, 300);
+    });
+
     //Плавный скролл
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
@@ -12,7 +43,7 @@ $(function () {
 
     // Выпадающее верхнее меню
     $(window).scroll(function(event) {
-        if ($(this).scrollTop () > $(window ).height() * 0.1) {
+        if ($(this).scrollTop () > $(window ).height() * 0.1 && $(window ).width() > 600) {
             $(".scroll_menu").slideDown();
 
             return false;
@@ -34,7 +65,7 @@ $(function () {
     let c9 = 0;
     let c10 = 0;
     //Capturing the exact slider
-    $(".next").click(function () {
+    $(".nxt").click(function () {
         let n = $(this).closest(".direction").attr("id");
         let size = $(".container_art_small").width();
         $("#content_art" + n).css("transition", "transform 0.3s ease-in-out");

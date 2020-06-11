@@ -28,16 +28,13 @@ a {
 }
 /* Navigation */
 .container {
-    width: 95%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    margin: auto;
+    font-size: 1.5vw;
+    width: 90%;
 }
 
 
 .header {
-    display: flex;
-    justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -99,7 +96,10 @@ a {
 .nav {
     font-size:  1.5vw;
 }
-
+.m_content {
+    display: flex;
+    justify-content: space-between;
+}
 /* Column1 */
 
 .column1{
@@ -133,7 +133,7 @@ a {
     position: relative;
 }
 
-.next, .prev{
+.nxt, .prev{
     fill: white;
     stroke: black;
     stroke-width: 1px;
@@ -145,16 +145,11 @@ a {
     stroke: lightgrey;
 }
 
-.next {
+.nxt {
     margin-left: 20px;
 }
 
-.art {
-    margin-right: 2vw;
-    background-size: cover;
-    width: 15vw;
-    height: 15vw;
-}
+
 
 .art01 {
     background: url("../Art/Expressionism1.jpg") center;
@@ -296,7 +291,12 @@ a {
 .art94 {
     background: url("../Art_directions/Pop-art/Mao_1972.jpg") center;
 }
-
+.art {
+    margin-right: 2vw;
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+}
 .best {
     display: flex;
     justify-content: flex-start;
@@ -468,4 +468,297 @@ img {
 
 .direction.first {
     padding-top: 2vh;
+}
+
+.hamburger, .menu, .closew, .back, .close {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .header {
+        z-index: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .scroll_menu {
+        display: none;
+    }
+    body {
+        min-width: 200px;
+        min-height: auto;
+    }
+
+    .modalw {
+        --animate-duration: .3s;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 490;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hamburger {
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        background: url("../Music/burger.png") center no-repeat;
+        background-size: contain;
+        margin-left: 5%;
+    }
+
+    .container {
+        top: 0;
+        height: 100vh;
+        z-index: 500;
+        position: fixed;
+        left: -999px;
+        flex-direction: column;
+        font-size: 5vw;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        background-color: darkred;
+        transition: all .5s linear;
+    }
+
+    .nav {
+        font-size: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav_link, .menu, .closew {
+        margin-bottom: 3vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        color: white;
+        text-align: left;
+    }
+
+    .nav_link {
+        width: 70%;
+    }
+
+    .menu, .closew {
+        margin-bottom: 5vh;
+        display: block;
+        font-family: 'Rubik', Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 8vw;
+    }
+
+    .m_content {
+        margin-bottom: 15vh;
+        display: block;
+    }
+
+    .closew {
+        text-align: right;
+        position: relative;
+        margin-bottom: 20vh;
+        z-index: 510;
+        margin-right: 4vw;
+    }
+
+    .nav_link:after, .menu:after {
+        opacity: 1;
+        display: block;
+        background-color: white;
+    }
+
+    .back {
+        transform: rotate(180deg);
+        margin-right: 5%;
+        transition: all .3s linear;
+        display: block;
+        background-image: url("../Art/plus.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .content {
+        justify-content: center;
+        height: auto;
+        display: flex;
+    }
+
+    .column1 {
+        margin-right: 0;
+    }
+    .scroll {
+        top:0;
+        overflow: auto;
+        transition: all .5s linear;
+        border-left: 0;
+        margin-top: 0;
+        height: 100vh;
+        background-color: white;
+        width: 70%;
+        z-index: 500;
+        right: -999px;
+    }
+
+    .scroll a {
+        display: list-item;
+        font-size: 5vw;
+        text-align: left;
+        margin-left: 10vw;
+
+    }
+
+    .close {
+        top: 1vh;
+        position: absolute;
+        z-index: 510;
+        margin-left: 4vw;
+        display: block;
+        font-family: 'Rubik', Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 8vw;
+    }
+
+    .media {
+        margin-top: 3vh;
+        font-weight: 500;
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    .info {
+        font-size: 3vw;
+    }
+
+    .direction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tags {
+        display: none;
+    }
+
+    .button_tags {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        margin-top: 2vh;
+        width: 90vw;
+    }
+    .main {
+        text-align: center;
+        padding: 2vh 0;
+        margin: 0;
+        font-size: 10vw;
+        width: 90vw;
+    }
+
+    .button {
+        text-align: center;
+        background:none;
+        font-size: 6vw;
+        left:0;
+        width: 100%;
+        position: relative;
+    }
+
+    .review {
+        width: 90vw;
+        font-size: 4vw;
+    }
+
+    .painters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+    }
+
+    .painters .title, .gallery .title {
+        margin-top: 4vh;
+        font-size: 6vw;
+        text-align: left;
+        width: 100%;
+    }
+
+    .best {
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+    .img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .art_text {
+        font-size: 4vw;
+    }
+
+    .guy {
+        padding-left: 5vw;
+        padding-right:  5vw;
+    }
+
+    .gallery {
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    .slider {
+        height: 32vw;
+        justify-content: center;
+    }
+
+    .art {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .limiter {
+        width: 100%;
+        margin-top: 4vh;
+        height: 25vh;
+    }
+
+    svg.nxt, svg.prev, .border2 {
+        display: none;
+    }
+    .art {
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 25vh;
+    }
+    .carousel-cell {
+        height: 100%;
+        margin-right: 10px;
+        border-radius: 5px;
+        counter-increment: carousel-cell;
+    }
+
+    .content_art {
+        width: 100%;
+        display: block;
+        margin-right:0;
+    }
 }

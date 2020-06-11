@@ -209,7 +209,7 @@ a {
     display: block;
 }
 
-.hamburger, .menu, .closew, .back {
+.hamburger, .menu, .closew, .back, .media {
     display: none;
 }
 @media screen and (max-width: 600px) {
@@ -235,7 +235,6 @@ a {
         padding: 0;
     }
     .header {
-
         z-index: 500;
         display: flex;
         flex-direction: row;
