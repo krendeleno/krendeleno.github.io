@@ -2,7 +2,7 @@ $(function () {
 
     // Выпадающее верхнее меню
     $(window).scroll(function(event) {
-        if ($(this).scrollTop () > $(window ).height() * 0.3) {
+        if ($(this).scrollTop () > $(window ).height() * 0.3 && $(window ).width() > 600) {
             $(".scroll_menu").slideDown();
             return false;
         }

@@ -8,6 +8,10 @@ $(function () {
                 wrapAround: true
             });
             $(".container_art_small").addClass("carousel-cell");
+
+            $(".scroll a").bind("click", function () {
+                setTimeout(closing, 300);
+            });
         }
     }
 
@@ -27,10 +31,8 @@ $(function () {
         $(".scroll").css("right","-999px");
         $(".modalw").css("display", "none");
     }
+
     $(".close").bind("click", closing);
-    $(".scroll a").bind("click", function () {
-       setTimeout(closing, 300);
-    });
 
     //Плавный скролл
     $(document).on('click', 'a[href^="#"]', function (event) {

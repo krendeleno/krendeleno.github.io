@@ -470,7 +470,7 @@ img {
     padding-top: 2vh;
 }
 
-.hamburger, .menu, .closew, .back, .close {
+.hamburger, .menu, .closew, .back, .close, .media {
     display: none;
 }
 @media screen and (max-width: 600px) {
@@ -737,8 +737,8 @@ img {
 
     .limiter {
         width: 100%;
-        margin-top: 4vh;
-        height: 25vh;
+        margin-top: 5vh;
+        height: 30vh;
     }
 
     svg.nxt, svg.prev, .border2 {
