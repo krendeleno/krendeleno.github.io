@@ -46,6 +46,12 @@ $(function() {
         $(".pause-icon").css('background-image', 'url("Music/icons/play.png")');
     });
 
+    $(".amplitude-play").click (function () {
+        n = Amplitude.getActiveIndex();
+        $(".controls .pause-icon").css('background-image', 'url("Music/icons/pause.png")');
+        $("#" + n + " .pause-icon").css('background-image', 'url("Music/icons/pause.png")');
+    });
+
     //Download
     $(".amplitude-play-pause, .amplitude-prev, .amplitude-next").bind('click', function(){
         n = Amplitude.getActiveSongMetadata();

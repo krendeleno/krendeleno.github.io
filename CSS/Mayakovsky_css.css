@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 960px;
 }
 
 
@@ -209,10 +208,32 @@ a {
     display: block;
 }
 
-.hamburger, .menu, .closew, .back, .media {
+.hamburger, .menu, .closew, .back, .media  {
     display: none;
 }
+
+.up {
+    display: none;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 100;
+    bottom: 3vw;
+    right: 3vw;
+    position: fixed;
+    width: 5vw;
+    height: 5vw;
+    background: url("../Music/up.png") center no-repeat;
+    background-size: contain;
+}
+
 @media screen and (max-width: 600px) {
+    .up {
+        bottom: 3vw;
+        right: 7vw;
+        width: 20vw;
+        height: 20vw;
+    }
+
 
     body {
         min-width: 200px;

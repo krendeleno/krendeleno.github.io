@@ -4,10 +4,10 @@ body {
     height: 200vh;
     margin: 0;
     padding: 0;
-    min-width: 960px;
     font-family: 'Rubik', Helvetica, sans-serif;
     font-weight: 200;
 }
+
 
 a {
     scroll-behavior: smooth;
@@ -470,10 +470,22 @@ img {
     padding-top: 2vh;
 }
 
-.hamburger, .menu, .closew, .back, .close, .media {
+.hamburger, .menu, .closew, .back, .close, .media, .up {
     display: none;
 }
 @media screen and (max-width: 600px) {
+    .up {
+        opacity: 0.5;
+        z-index: 100;
+        bottom: 3vw;
+        right: 7vw;
+        position: fixed;
+        width: 20vw;
+        height: 20vw;
+        background: url("../Music/up.png") center no-repeat;
+        background-size: contain;
+    }
+
     .header {
         z-index: 500;
         display: flex;
@@ -707,8 +719,8 @@ img {
     }
 
     .img {
-        width: 25vw;
-        height: 25vw;
+        width: 30vw;
+        height: 30vw;
     }
 
     .art_text {
