@@ -788,10 +788,7 @@ input[type=range].amplitude-volume-slider::-ms-tooltip {
     .c {
         padding-right: 4vw;
     }
-    .column2_content {
 
-        grid-gap: 30px;
-    }
     .column2 {
         padding-left: 0;
         margin-top: 5vh;
@@ -826,7 +823,7 @@ input[type=range].amplitude-volume-slider::-ms-tooltip {
     }
 
     .player {
-        height: 25vh;
+        height: 15vh;
     }
 
     .player .text {

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <script src="JS/Author.js" charset="utf-8"></script>
@@ -18,24 +19,35 @@
 <body class="animsition">
 <header class="header scroll_menu">
     <div class="container">
-        <nav class="nav">
-            <a href="Variety_Art.html" class="nav_link animsition-link">Живопись</a>
-            <a href="Variety_Literature.html" class="nav_link animsition-link">Литература</a>
-            <a href="Variety_Music.html" class="nav_link animsition-link">Музыка</a>
-        </nav>
+        <div class="m_content">
+            <a href="index.html" class="nav_link animsition-link">Главная</a>
+            <nav class="nav">
+                <a href="Variety_Art.html" class="nav_link animsition-link">Живопись</a>
+                <a href="Variety_Literature.html" class="nav_link animsition-link">Литература</a>
+                <a href="Variety_Music.html" class="nav_link animsition-link">Музыка</a>
+            </nav>
+            </div>
     </div>
 </header>
+<div class="modalw animate__animated animate__fadeIn"></div>
 <header class="header">
+    <div class="hamburger"></div>
     <div class="container">
-        <nav class="nav">
-            <a href="Variety_Art.html" class="nav_link animsition-link">Живопись</a>
-            <a href="Variety_Literature.html" class="nav_link animsition-link">Литература</a>
-            <a href="Variety_Music.html" class="nav_link animsition-link">Музыка</a>
-        </nav>
+        <div class="closew">×</div>
+        <div class="m_content">
+            <div class="menu">Меню</div>
+            <a href="index.html" class="nav_link i animsition-link">Главная</a>
+            <nav class="nav">
+                <a href="Variety_Art.html" class="nav_link animsition-link"  data-animsition-out-class="fade-out">Живопись</a>
+                <a href="Variety_Literature.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Литература</a>
+                <a href="Variety_Music.html" class="nav_link animsition-link" data-animsition-out-class="fade-out">Музыка</a>
+            </nav>
+        </div>
     </div>
+    <div class="back"></div>
 </header>
     <div class="content">
-        <div class="column1 poems">
+        <div class="column1 poems animate__animated">
             <div class="background">
                 <div class="text explanation"> Кликните на имя писателя для биографии </div>
                 <div class="text author"> Владимир Маяковский </div>
@@ -59,7 +71,7 @@
                 </ul>
             </div>
         </div>
-        <div class="column2">
+        <div class="column2 animate__animated">
             <div id="1" class="first poem animate__animated animate__fadeInLeft">
                 <div class="title_text">Лиличка</div>
                 <div class="text">
