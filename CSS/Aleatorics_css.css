@@ -669,6 +669,7 @@ input[type=range].amplitude-volume-slider::-ms-tooltip {
     }
 
     .hamburger {
+        transition: all .5s linear;
         width: 10vw;
         height: 10vw;
         display: flex;
@@ -864,8 +865,17 @@ input[type=range].amplitude-volume-slider::-ms-tooltip {
         bottom:25vh;
     }
 
-    .volume-icon {
-
+    .hamburger:active {
+        transform: scale(1.2);
     }
 
+    .button:hover {
+        background: black;
+        color: white;
+    }
+
+    .button:active {
+        background: darkred;
+        color: white;
+    }
 }

@@ -1,5 +1,12 @@
 $(function () {
 
+    $(window).resize(function() {
+        if ($(window ).width() > 600) {
+            $(".column1").css("display", "block");
+            $(".column2").css("display", "flex");
+        }
+    });
+
     //Стихи
     prev = 1;
     $(".a").click(function () {

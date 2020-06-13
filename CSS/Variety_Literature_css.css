@@ -334,12 +334,17 @@ p.info {
     }
 
     .hamburger {
+        transition: all linear .5s;
         width: 10vw;
         height: 10vw;
         display: flex;
         background: url("../Music/burger.png") center no-repeat;
         background-size: contain;
         margin-left: 5%;
+    }
+
+    .hamburger:active {
+        transform: scale(1.2);
     }
 
     .container {
@@ -485,6 +490,18 @@ p.info {
         grid-row: 10;
     }
 
+    .box:hover {
+        background: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .box:active {
+        opacity: 0.6;
+        background: darkred;
+        color: white;
+    }
+
     /*Modals for mobiles*/
     .modal_window {
         overflow:auto;
@@ -546,5 +563,13 @@ p.info {
 
     p.info {
         font-size: 3vw;
+    }
+
+    .img:hover {
+        transform: none;
+    }
+
+    .img:active {
+        transform: scale(1.2);
     }
 }

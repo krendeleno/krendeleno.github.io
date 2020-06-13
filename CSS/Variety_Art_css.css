@@ -518,6 +518,7 @@ img {
     }
 
     .hamburger {
+        transition: all linear .5s;
         width: 10vw;
         height: 10vw;
         display: flex;
@@ -588,7 +589,6 @@ img {
     }
 
     .back {
-        transform: rotate(180deg);
         margin-right: 5%;
         transition: all .3s linear;
         display: block;
@@ -597,6 +597,10 @@ img {
         background-size: contain;
         width: 8vw;
         height: 8vw;
+    }
+
+    .back:active, .hamburger:active {
+        transform: scale(1.2);
     }
 
     .content {
@@ -737,6 +741,9 @@ img {
         width: 100%;
     }
 
+    .gallery .title {
+        margin-bottom: 5vh;
+    }
     .slider {
         height: 32vw;
         justify-content: center;

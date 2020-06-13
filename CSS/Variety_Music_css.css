@@ -132,6 +132,7 @@ a {
     }
 
     .hamburger {
+        transition: all .5s linear;
         width: 10vw;
         height: 10vw;
         display: flex;
@@ -219,5 +220,22 @@ a {
     .variety a {
         display: flex;
         justify-content: center;
+    }
+
+    .hamburger:active {
+        transform: scale(1.2);
+    }
+
+
+    .option:hover {
+        color: white;
+        background: none;
+        transform: none;
+    }
+
+    .option:active {
+        color: white;
+        background: darkred;
+        transform: scale(1.1);
     }
 }

@@ -262,21 +262,32 @@ img {
     height: auto;
 }
 
-.hamburger, .menu, .closew, .info, .up {
+.hamburger, .menu, .closew, .info{
     display: none;
 }
+
+.up {
+    display: none;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 100;
+    bottom: 3vw;
+    right: 3vw;
+    position: fixed;
+    width: 5vw;
+    height: 5vw;
+    background: url("../Music/up.png") center no-repeat;
+    background-size: contain;
+}
+
 @media screen and (max-width: 600px) {
     .up {
-        opacity: 0.5;
-        z-index: 100;
         bottom: 3vw;
         right: 7vw;
-        position: fixed;
         width: 20vw;
         height: 20vw;
-        background: url("../Music/up.png") center no-repeat;
-        background-size: contain;
     }
+
 
     .header {
         z-index: 500;
@@ -311,6 +322,7 @@ img {
     }
 
     .hamburger {
+        transition: all .5s linear;
         width: 10vw;
         height: 10vw;
         display: flex;
@@ -476,5 +488,10 @@ img {
         height: auto;
         width: 60vw;
     }
+
+    .hamburger:active {
+        transform: scale(1.2);
+    }
+
 }
 
