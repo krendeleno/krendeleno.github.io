@@ -1,4 +1,8 @@
 $(function () {
+    if ($(window ).width() <= 600) {
+        $(".back").bind("click", trip);
+        $("li").bind("click", trip);
+    }
 
     $(window).resize(function() {
         if ($(window ).width() > 600) {
@@ -63,8 +67,6 @@ $(function () {
         }
     }
 
-        $(".back").bind("click", trip);
-        $("li").bind("click", trip);
 
     // //Фикс левой фотки
     // $(window).scroll(function(event) {
