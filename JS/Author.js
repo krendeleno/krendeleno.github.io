@@ -5,9 +5,15 @@ $(function () {
     }
 
     $(window).resize(function() {
+        if ($(window ).width() <= 600) {
+            $(".back").bind("click", trip);
+            $("li").bind("click", trip);
+        }
         if ($(window ).width() > 600) {
             $(".column1").css("display", "block");
             $(".column2").css("display", "flex");
+            $(".back").unbind("click", trip);
+            $("li").unbind("click", trip);
         }
     });
 
